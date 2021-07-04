@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import Home from '../components/Home';
-import Auth from '../components/Auth';
+import Home from './Home';
+import Auth from './Auth';
 
 const Router = () => {
   return (
