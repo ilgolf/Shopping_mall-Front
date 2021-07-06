@@ -1,0 +1,13 @@
+@import './common.scss';
+
+header {
+  background-color: #f3f1ea;
+  & .searchBtn {
+    font-size: 36px;
+    font-size: #2c2c2c;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+}
