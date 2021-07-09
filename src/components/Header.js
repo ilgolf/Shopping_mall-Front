@@ -10,8 +10,8 @@ const Container = styled.div`
   padding: 0 10px;
 `;
 const Logo = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 64px;
+  height: 64px;
 `;
 const Menus = styled.ul`
   display: flex;
@@ -41,7 +41,7 @@ const Menus = styled.ul`
 const Header = ({ isLoggedIn }) => {
   return (
     <header>
-      <Container className="container">
+      <Container className="container-md">
         <Link to="/">
           <Logo src="https://img.icons8.com/ios/452/picsart.png" />
         </Link>

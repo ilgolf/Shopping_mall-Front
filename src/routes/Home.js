@@ -16,7 +16,7 @@ const categories = [
 
 const Container = styled.div`
   background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-  background-image: url('./images/cake.webp');
+  background-image: url('./images/main_banner.webp');
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
