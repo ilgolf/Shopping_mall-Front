@@ -13,6 +13,11 @@ $container-max-widths: (
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/containers';
 
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
 

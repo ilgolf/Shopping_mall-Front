@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 1000px;
   height: 120px;
-  margin: 0 auto;
   padding: 0 10px;
 `;
 const Logo = styled.img`
@@ -40,18 +38,27 @@ const Menus = styled.ul`
 `;
 // const Icon = styled.span``;
 
-const Header = () => {
+const Header = ({ isLoggedIn }) => {
   return (
     <header>
-      <Container>
-        <Logo src="https://img.icons8.com/ios/452/picsart.png" />
+      <Container className="container">
+        <Link to="/">
+          <Logo src="https://img.icons8.com/ios/452/picsart.png" />
+        </Link>
         <SearchBar />
         <Menus>
           <li>
-            <Link to="/login">
-              <span className="material-icons">person</span>
-              <span>마이스낵</span>
-            </Link>
+            {isLoggedIn ? (
+              <Link to="/ms">
+                <span className="material-icons">person</span>
+                <span>마이스낵</span>
+              </Link>
+            ) : (
+              <Link to="/auth">
+                <span className="material-icons">person</span>
+                <span>로그인</span>
+              </Link>
+            )}
           </li>
           <li>
             <Link to="/cart">
@@ -60,8 +67,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/cart">
-              <span class="material-icons">support_agent</span>
+            <Link to="/service">
+              <span className="material-icons">support_agent</span>
               <span>고객센터</span>
             </Link>
           </li>
