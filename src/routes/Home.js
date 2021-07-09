@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Cake from '../static/images/cake.jpg';
 import Banner from '../components/Banner';
 
 const categories = [
@@ -138,31 +137,31 @@ const Home = () => {
         <h2>오늘의 발견</h2>
         <DiscoveryImageWrapper>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
           <Link to="/categories/cake">
-            <img src={Cake} alt="" />
+            <img src="./images/cake.jpg" alt="" />
           </Link>
         </DiscoveryImageWrapper>
 
